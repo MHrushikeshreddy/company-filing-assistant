@@ -1,0 +1,7 @@
+question,expected_answer_contains
+"Was company 01962348 dissolved?","dissolved"
+"What type of accounts did company 01962348 file?","dormant"
+"Did company 01962348 have any director changes?","director"
+"What is the description of a confirmation statement filing?","confirmation-statement"
+"What is the description of a director termination filing?","termination-director"
+"Did company 01962348 have a registered office address change?","address"

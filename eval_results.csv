@@ -1,0 +1,41 @@
+question,expected_contains,ai_answer,passed
+Was company 04211469 dissolved?,no,Not found.,True
+What type of accounts did company 04211469 file?,micro,"Company 04211469 filed the following types of accounts:
+
+- accounts-with-accounts-type-micro-entity
+- accounts-with-accounts-type-dormant
+- accounts-with-accounts-type-total-exemption-small",True
+Was company 07700382 dissolved?,no,Not found.,True
+What type of accounts did company 07700382 file?,full,"Company 07700382 filed the following types of accounts:
+- Dormant accounts (type: AA)
+- Total exemption full accounts (type: AA)",True
+Was company 13925491 dissolved?,no,Not found.,True
+What type of accounts did company 13925491 file?,full,Company 13925491 filed accounts-with-accounts-type-total-exemption-full.,True
+Was company 10298920 dissolved?,no,Not found.,True
+What type of accounts did company 10298920 file?,micro,Company 10298920 filed accounts-with-accounts-type-micro-entity and accounts-with-accounts-type-dormant.,True
+Was company 08827927 dissolved?,dissolv,"Yes, company 08827927 was dissolved (gazette filing type GAZ2, date: 2026-02-17).",True
+What type of accounts did company 08827927 file?,dormant,Company 08827927 filed dormant accounts (type: AA).,True
+Was company 11270200 dissolved?,no,Not found.,True
+What type of accounts did company 11270200 file?,full,Answer: accounts-with-accounts-type-total-exemption-full,True
+Was company SL030264 dissolved?,no,Not found.,True
+Was company 08097864 dissolved?,dissolv,"Yes, the company was subject to a dissolution filing (type: DISS16(SOAS)) on 2023-10-10, described as dissolved-compulsory-strike-off-suspended.",True
+What type of accounts did company 08097864 file?,full,"The company filed the following types of accounts:
+- accounts-with-accounts-type-total-exemption-small
+- accounts-with-accounts-type-total-exemption-full",True
+Was company SC812962 dissolved?,dissolv,"Yes, company SC812962 was dissolved; the filing records show a gazette-dissolved-voluntary (GAZ2(A)) filing on 2025-08-05.",True
+Was company 10886807 dissolved?,no,Not found.,True
+What type of accounts did company 10886807 file?,micro,Company 10886807 filed accounts-with-accounts-type-micro-entity.,True
+Was company 11051538 dissolved?,dissolv,"Yes, company 11051538 was dissolved on 2026-03-17 (type: GAZ2).",True
+What type of accounts did company 11051538 file?,micro,Company 11051538 filed accounts-with-accounts-type-micro-entity.,True
+Was company 09750119 dissolved?,no,Not found.,True
+What type of accounts did company 09750119 file?,micro,Company 09750119 filed accounts-with-accounts-type-micro-entity.,True
+Was company 07229625 dissolved?,no,Not found.,True
+What type of accounts did company 07229625 file?,abridged,"Company 07229625 filed the following types of accounts:
+- Accounts with accounts type unaudited-abridged (type: AA)
+- Accounts with accounts type total-exemption-full (type: AA)",True
+Was company 11513540 dissolved?,dissolv,"Yes, company 11513540 was dissolved (type: DISS16(SOAS), date: 2023-08-15).",True
+What type of accounts did company 11513540 file?,full,"Company 11513540 filed the following types of accounts:
+- Dormant
+- Total exemption full",True
+Was company 14821054 dissolved?,no,Not found.,True
+What type of accounts did company 14821054 file?,dormant,The company filed dormant accounts (type: AA).,True

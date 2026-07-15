@@ -13,9 +13,9 @@ load_dotenv()
 def load_resources():
     client_ai = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
     embed_model = SentenceTransformer("all-MiniLM-L6-v2")
-    client = chromadb.PersistentClient(path="./chroma_db")
+    client = chromadb.PersistentClient(path="../chroma_db")
     collection = client.get_or_create_collection(name="filings")
-    companies_df = pd.read_csv("companies_data.csv")
+    companies_df = pd.read_csv("../data/companies_data.csv")
     companies_df["company_number"] = companies_df["company_number"].astype(str)
     return client_ai, embed_model, collection, companies_df
 

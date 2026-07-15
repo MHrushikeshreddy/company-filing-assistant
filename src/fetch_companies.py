@@ -41,5 +41,5 @@ for number in company_numbers:
     time.sleep(0.3)
 
 df = pd.DataFrame(results)
-df.to_csv("companies_data.csv", index=False)
+df.to_csv("../data/companies_data.csv", index=False)
 print(df)

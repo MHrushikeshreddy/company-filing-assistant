@@ -10,10 +10,10 @@ from google import genai
 load_dotenv()
 client_ai = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 embed_model = SentenceTransformer("all-MiniLM-L6-v2")
-client = chromadb.PersistentClient(path="./chroma_db")
+client = chromadb.PersistentClient(path="../chroma_db")
 collection = client.get_or_create_collection(name="filings")
 
-eval_df = pd.read_csv("eval_questions_large.csv")
+eval_df = pd.read_csv("../data/eval_questions_large.csv")
 results = []
 
 
@@ -80,7 +80,7 @@ Answer:"""
     time.sleep(3)
 
 results_df = pd.DataFrame(results)
-results_df.to_csv("eval_results.csv", index=False)
+results_df.to_csv("../data/eval_results.csv", index=False)
 
 accuracy = results_df["passed"].mean() * 100
 print("\n" + results_df[["question", "passed"]].to_string(index=False))

@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
 api_key = os.getenv("COMPANIES_HOUSE_API_KEY")
 
-df = pd.read_csv("companies_data.csv", dtype={"company_number": str})
+df = pd.read_csv("../data/companies_data.csv", dtype={"company_number": str})
 company_numbers = df["company_number"].tolist()
 
 print("Company numbers loaded:", company_numbers)
@@ -36,6 +36,6 @@ for number in company_numbers:
     time.sleep(0.3)
 
 filings_df = pd.DataFrame(filing_rows)
-filings_df.to_csv("filings_data.csv", index=False)
+filings_df.to_csv("../data/filings_data.csv", index=False)
 print(filings_df.head(20))
 print("Total filings pulled:", len(filings_df))

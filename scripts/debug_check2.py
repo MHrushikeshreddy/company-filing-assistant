@@ -1,7 +1,7 @@
 import pandas as pd
 import chromadb
 
-df = pd.read_csv("filings_data.csv")
+df = pd.read_csv("../data/filings_data.csv")
 print("Total rows in CSV:", len(df))
 print("Unique companies in CSV:", df["company_number"].nunique())
 print("Is 01962348 in CSV company_number column?", "01962348" in df["company_number"].astype(str).values)

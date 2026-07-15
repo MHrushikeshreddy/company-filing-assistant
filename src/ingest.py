@@ -2,12 +2,12 @@ import pandas as pd
 import chromadb
 from sentence_transformers import SentenceTransformer
 
-df = pd.read_csv("filings_data.csv")
+df = pd.read_csv("../data/filings_data.csv")
 df["company_number"] = df["company_number"].astype(str).str.zfill(8)
 
 embed_model = SentenceTransformer("all-MiniLM-L6-v2")
 
-client = chromadb.PersistentClient(path="./chroma_db")
+client = chromadb.PersistentClient(path="../chroma_db")
 client.delete_collection(name="filings")
 collection = client.create_collection(name="filings")
 

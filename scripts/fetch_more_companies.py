@@ -32,6 +32,6 @@ for term in search_terms:
 
 df = pd.DataFrame(all_companies)
 df = df.drop_duplicates(subset="company_number")
-df.to_csv("companies_data.csv", index=False)
+df.to_csv("../data/companies_data.csv", index=False)
 print(f"Total unique companies pulled: {len(df)}")
 print(df.head(10))

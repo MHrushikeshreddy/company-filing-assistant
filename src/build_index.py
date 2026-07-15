@@ -2,13 +2,13 @@ import pandas as pd
 import chromadb
 from sentence_transformers import SentenceTransformer
 
-filings_df = pd.read_csv("filings_data.csv", dtype={"company_number": str})
+filings_df = pd.read_csv("../data/filings_data.csv", dtype={"company_number": str})
 filings_df = filings_df.dropna(subset=["description"])
 
 print("Loading embedding model (first run may take a minute)...")
 model = SentenceTransformer("all-MiniLM-L6-v2")
 
-client = chromadb.PersistentClient(path="./chroma_db")
+client = chromadb.PersistentClient(path="../chroma_db")
 collection = client.get_or_create_collection(name="filings")
 
 documents = []

@@ -2,7 +2,7 @@ import pandas as pd
 import random
 
 random.seed(42)
-df = pd.read_csv("filings_data.csv")
+df = pd.read_csv("../data/filings_data.csv")
 df["company_number"] = df["company_number"].astype(str).str.zfill(8)
 
 companies = df["company_number"].unique().tolist()
@@ -67,6 +67,6 @@ if not officer_rows.empty:
         })
 
 eval_df = pd.DataFrame(rows)
-eval_df.to_csv("eval_questions_large.csv", index=False)
+eval_df.to_csv("../data/eval_questions_large.csv", index=False)
 print(f"Generated {len(eval_df)} questions across {len(sample_companies)} companies.")
 print(eval_df.head(10).to_string())

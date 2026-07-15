@@ -9,7 +9,7 @@ load_dotenv()
 client_ai = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
 embed_model = SentenceTransformer("all-MiniLM-L6-v2")
-client = chromadb.PersistentClient(path="./chroma_db")
+client = chromadb.PersistentClient(path="../chroma_db")
 collection = client.get_or_create_collection(name="filings")
 
 

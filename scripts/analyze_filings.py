@@ -1,6 +1,6 @@
 import pandas as pd
 
-filings_df = pd.read_csv("filings_data.csv", dtype={"company_number": str})
+filings_df = pd.read_csv("../data/filings_data.csv", dtype={"company_number": str})
 filings_df["date"] = pd.to_datetime(filings_df["date"])
 
 filings_df = filings_df.sort_values(["company_number", "date"])
@@ -17,5 +17,5 @@ summary = filings_df.groupby("company_number").agg(
     max_gap_days=("days_since_last_filing", "max"),
 ).reset_index()
 
-summary.to_csv("filing_summary.csv", index=False)
+summary.to_csv("../data/filing_summary.csv", index=False)
 print(summary)
